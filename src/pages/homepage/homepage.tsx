@@ -498,7 +498,7 @@ export function HomePage() {
                   className="relative mt-12 w-full"
                 >
                   {/* Gradient Background Layer */}
-                  <div className="absolute inset-0 bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 rounded-3xl z-0" />
+                  <div className="absolute inset-0 bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 rounded-3xl z-0 h-full" />
 
                   {/* Content Layer */}
                   <div className="relative z-10 flex items-start gap-3 px-7 py-6 rounded-3xl text-white">
