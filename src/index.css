@@ -1,0 +1,140 @@
+@import 'tailwindcss';
+
+a {
+  text-decoration: none;
+}
+
+.menu-background,
+.button-background {
+  background-color: #fff !important;
+}
+
+[data-bs-theme='dark'] .menu-background,
+[data-bs-theme='dark'] .button-background {
+  background-color: #30334e !important;
+}
+
+.menu-item {
+  color: #212121;
+}
+
+/* Remove border in all states */
+.btn,
+.btn:focus,
+.btn:active,
+.btn:hover {
+  border: none !important;
+}
+
+/* Remove focus ring caused after mouse click only */
+.btn:focus:not(:focus-visible) {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Keep keyboard accessibility - visible focus indicator */
+.btn:focus-visible {
+  outline: 2px solid var(--bs-primary, #0d6efd);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* Dark mode focus indicator */
+[data-bs-theme='dark'] .btn:focus-visible {
+  outline-color: var(--bs-primary, #6ea8fe);
+  box-shadow: 0 0 0 0.25rem rgba(110, 168, 254, 0.25);
+}
+
+[data-bs-theme='dark'] .menu-item {
+  color: #c7c8dc;
+}
+
+.display-dark {
+  display: none; /* hide dark by default */
+}
+
+/* When dark mode */
+[data-bs-theme='dark'] .display-light {
+  display: none;
+}
+
+[data-bs-theme='dark'] .display-dark {
+  display: block;
+}
+
+.custom-color-button button:first-child {
+  padding-right: 0 !important;
+}
+
+.color-option button {
+  border-radius: 5px;
+}
+
+.truncate-custom button span span {
+  max-width: 45px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--bs-border-color);
+  background-clip: padding-box;
+  border: 0;
+  border-radius: calc((6px / 3) * 2);
+  box-shadow: none;
+  min-height: 50px;
+}
+
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-track:hover {
+  background: none;
+  border: none;
+}
+
+/* Screen reader only content - visually hidden but accessible */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Focusable screen reader only content */
+.sr-only-focusable:focus,
+.sr-only-focusable:active {
+  position: static;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+}
+
+/* Skip to main content link */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--bs-primary, #0d6efd);
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  z-index: 10000;
+  border-radius: 0 0 4px 0;
+}
+
+.skip-link:focus {
+  top: 0;
+}

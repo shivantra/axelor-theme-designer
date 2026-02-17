@@ -1,0 +1,40 @@
+.themeOptions {
+  flex: 1;
+}
+
+.layout > div {
+  width: 300px;
+}
+
+.active button {
+  font-weight: bold;
+  background-color: var(--bs-border-color);
+}
+
+.colorBox {
+  label {
+    width: 100px;
+  }
+  input {
+    border: none;
+    outline: none;
+    width: 36px;
+  }
+}
+
+.form > div:last-child > div > div {
+  padding: 0;
+}
+
+.popper {
+  min-height: 320px;
+  min-width: 250px;
+  max-height: 60vh;
+  overflow: auto;
+}
+
+.textEditor {
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+}

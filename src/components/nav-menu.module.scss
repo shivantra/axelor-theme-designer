@@ -1,0 +1,88 @@
+.header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  padding: 0.25rem 0.5rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+
+  &:focus-visible {
+    outline: 2px solid var(--bs-primary);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
+  .toggleIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.appLogo {
+  flex: 1;
+  user-select: none;
+  height: 32px !important;
+  svg,
+  img {
+    height: 100%;
+    vertical-align: middle;
+  }
+}
+
+.logoButton {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  height: 100%;
+
+  &:focus-visible {
+    outline: 2px solid var(--bs-primary);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+}
+
+.editIcon {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  padding: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:focus-visible {
+    outline: 2px solid var(--bs-primary);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+}
+
+.appIcon {
+  width: 32px;
+  height: 32px;
+  overflow: hidden;
+  border-radius: 100%;
+  margin: 0 0.125rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  svg,
+  img {
+    width: 24px;
+    height: 24px;
+  }
+}

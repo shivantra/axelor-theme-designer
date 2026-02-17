@@ -1,0 +1,27 @@
+.tabs {
+  flex: 1;
+  position: relative;
+}
+
+.quickItems img {
+  height: 23px;
+  width: 23px;
+}
+
+.settings {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:focus-visible {
+    outline: 2px solid var(--bs-primary);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+}
