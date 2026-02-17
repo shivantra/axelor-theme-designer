@@ -7,12 +7,10 @@ import PreviewImage from '../../images/theme-designer-preview.png';
 import CompanyImage from '../../images/company.svg';
 import { COMPANY_FEATURES, COMPANY_SERVICES, FEATURES, STEPS } from '@/constants';
 import { i18n } from '@/services/i18n';
-import SeoTags from '@/components/SeoTags';
 
 export function HomePage() {
   return (
     <>
-      <SeoTags />
       <main>
         <section className="relative overflow-hidden pt-30! pb-14 md:pt-40! md:pb-28 bg-[#f6f7fb] -mt-16!">
           {/* Grid background */}

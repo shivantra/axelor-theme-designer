@@ -30,7 +30,6 @@ import { i18n } from '@/services/i18n';
 import formStyles from '../../views/form/form.module.scss';
 import styles from '../../App.module.scss';
 import { Footer } from '@/components/footer';
-import SeoTags from '@/components/SeoTags';
 
 type DefineTheme = {
   key: string;
@@ -951,7 +950,6 @@ const ThemeContent = memo(function ThemeContent() {
 function Render({ children }: { children: ReactElement }) {
   return (
     <>
-      <SeoTags />
       {children}
       <Footer />
     </>
