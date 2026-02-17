@@ -1,6 +1,6 @@
 {
   "name": "axelor-theme-designer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Visual theme designer for Axelor ERP to quickly create and preview professional UI themes.",
   "private": true,
   "type": "module",
