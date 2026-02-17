@@ -4,7 +4,7 @@ const SeoTags = () => {
   return (
     <Helmet>
       {/* Title */}
-      <title>Shivantra | Axelor Theme Designer – Visual UI Customization for Axelor ERP</title>
+      <title>Shivantra - Axelor Theme Designer – Visual UI Customization for Axelor ERP</title>
 
       {/* Favicon */}
       <link rel="icon" type="image/x-icon" href="/favicon.ico" />
