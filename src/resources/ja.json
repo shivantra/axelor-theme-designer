@@ -221,9 +221,12 @@
   "Mandarin": "中国語（マンダリン）",
   "Hindi": "ヒンディー語",
   "Thai": "タイ語",
-  "hero_title": "カスタマイズした Axelor ERP テーマを|今すぐ作成・プレビュー・配信。",
-  "built_by_title": "Axelor ERP の|専門家|が構築",
-  "axelor_services_title": "Axelor サービス|提供元",
-  "build_better_title": "より良い|Axelor ERP|体験を構築",
-  "design_perfect_title": "完璧な|Axelor テーマ|を今すぐデザイン"
+  "English": "英語",
+  "Français": "フランス語",
+  "Español": "スペイン語",
+  "Deutsch": "ドイツ語",
+  "日本語": "日本語",
+  "中文": "中国語（普通話）",
+  "हिन्दी": "ヒンディー語",
+  "ไทย": "タイ語"
 }

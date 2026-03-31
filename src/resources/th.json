@@ -221,9 +221,12 @@
   "Mandarin": "จีน (แมนดาริน)",
   "Hindi": "ฮินดี",
   "Thai": "ไทย",
-  "hero_title": "สร้าง พรีวิว และส่งมอบ|ธีม Axelor ERP ที่กำหนดเองได้ทันที",
-  "built_by_title": "สร้างโดย|ผู้เชี่ยวชาญ|ด้าน Axelor ERP",
-  "axelor_services_title": "บริการ Axelor โดย|",
-  "build_better_title": "สร้าง|Axelor ERP|ประสบการณ์ที่ดีขึ้น",
-  "design_perfect_title": "ออกแบบ|Axelor Theme|ที่สมบูรณ์แบบของคุณทันที"
+  "English": "อังกฤษ",
+  "Français": "ฝรั่งเศส",
+  "Español": "สเปน",
+  "Deutsch": "เยอรมัน",
+  "日本語": "ญี่ปุ่น",
+  "中文": "จีน (แมนดาริน)",
+  "हिन्दी": "ฮินดี",
+  "ไทย": "ไทย"
 }

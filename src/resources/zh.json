@@ -221,9 +221,12 @@
   "Mandarin": "普通话",
   "Hindi": "印地语",
   "Thai": "泰语",
-  "hero_title": "创建、预览并即时交付|定制的 Axelor ERP 主题。",
-  "built_by_title": "由|专家|打造的 Axelor ERP",
-  "axelor_services_title": "Axelor 服务商|",
-  "build_better_title": "构建更好的|Axelor ERP|体验",
-  "design_perfect_title": "设计您完美的|Axelor 主题|立即开始"
+  "English": "英语",
+  "Français": "法语",
+  "Español": "西班牙语",
+  "Deutsch": "德语",
+  "日本語": "日语",
+  "中文": "普通话",
+  "हिन्दी": "印地语",
+  "ไทย": "泰语"
 }

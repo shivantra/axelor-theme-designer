@@ -221,9 +221,12 @@
   "Mandarin": "Mandarin",
   "Hindi": "Hindi",
   "Thai": "Thailändisch",
-  "hero_title": "Erstellen, vorschauen und liefern Sie|personalisierte Axelor ERP-Themen sofort.",
-  "built_by_title": "Entwickelt von|Experten|für Axelor ERP",
-  "axelor_services_title": "Axelor Services von|",
-  "build_better_title": "Bessere|Axelor ERP|Erfahrungen aufbauen",
-  "design_perfect_title": "Gestalten Sie Ihr perfektes|Axelor Theme|in Sekunden"
+  "English": "Englisch",
+  "Français": "Französisch",
+  "Español": "Spanisch",
+  "Deutsch": "Deutsch",
+  "日本語": "Japanisch",
+  "中文": "Chinesisch (Mandarin)",
+  "हिन्दी": "Hindi",
+  "ไทย": "Thailändisch"
 }
