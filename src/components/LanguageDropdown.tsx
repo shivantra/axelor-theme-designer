@@ -112,6 +112,9 @@ function LanguageDropdown({ menu }: { menu: LanguageMenu }) {
             padding: 4,
             boxShadow: '0 8px 24px rgba(0,0,0,.12)',
             zIndex: 100,
+            display: 'flex',
+            flexDirection: 'column',
+            minWidth: 140,
           }}
         >
           {menu.items.map((item, index) => (

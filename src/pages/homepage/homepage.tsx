@@ -31,19 +31,24 @@ export function HomePage() {
           <div className="relative w-[90%] max-w-[1200px] mx-auto px-6">
             {/* Header */}
             <div className="text-center mb-10! lg:mb-20!">
-              <h1 className="text-center font-bold! tracking-tight text-slate-900">
-                <span className="block text-3xl md:text-4xl lg:text-5xl text-slate-900 max-w-4xl mx-auto">
-                  {i18n.get('Create, preview, and deliver customized')}
-                </span>
-
-                <span
-                  className="block mt-3 lg:mt-4 text-3xl md:text-4xl lg:text-5xl
-                   bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600
-                   bg-clip-text text-transparent"
-                >
-                  {i18n.get('Axelor ERP themes instantly.')}
-                </span>
-              </h1>
+              {(() => {
+                const heroTitle = i18n.get('hero_title');
+                const [heroPart1, heroPart2] = heroTitle.split('|');
+                return (
+                  <h1 className="text-center font-bold! tracking-tight text-slate-900">
+                    <span className="block leading-10 md:leading-11 lg:leading-14 text-3xl md:text-4xl lg:text-5xl text-slate-900 max-w-4xl mx-auto">
+                      {heroPart1}
+                    </span>
+                    <span
+                      className="block mt-2 leading-10 md:leading-11 lg:leading-18 text-3xl md:text-4xl lg:text-5xl
+                       bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600
+                       bg-clip-text text-transparent"
+                    >
+                      {heroPart2}
+                    </span>
+                  </h1>
+                );
+              })()}
 
               <p className="mt-6! mb-0! max-w-3xl mx-auto text-lg text-slate-700">
                 {i18n.get(
@@ -234,13 +239,18 @@ export function HomePage() {
           <div className="relative row w-[90%] max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             {/* Text column */}
             <div className="space-y-6!">
-              <h2 className="text-3xl! md:text-4xl! font-bold! tracking-tight text-slate-900">
-                {i18n.get('Design Your Perfect')}{' '}
-                <span className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
-                  {i18n.get('Axelor Theme')}{' '}
-                </span>
-                {i18n.get('In Second')}
-              </h2>
+              {(() => {
+                const [p1, p2, p3] = i18n.get('design_perfect_title').split('|');
+                return (
+                  <h2 className="text-3xl! md:text-4xl! font-bold! tracking-tight text-slate-900">
+                    {p1}{' '}
+                    <span className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
+                      {p2}{' '}
+                    </span>
+                    {p3}
+                  </h2>
+                );
+              })()}
 
               <p className="text-lg text-slate-700 max-w-xl">
                 {i18n.get(
@@ -406,13 +416,18 @@ export function HomePage() {
           <div className="relative w-[90%] max-w-[1200px] mx-auto">
             {/* Title */}
             <div className=" mb-5 md:mb-13">
-              <h2 className="text-3xl! text-center md:text-4xl! font-bold! tracking-tight text-slate-900">
-                {i18n.get('Built by in')}{' '}
-                <span className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
-                  {i18n.get('Experts')}{' '}
-                </span>
-                {i18n.get('Axelor ERP')}
-              </h2>
+              {(() => {
+                const [p1, p2, p3] = i18n.get('built_by_title').split('|');
+                return (
+                  <h2 className="text-3xl! text-center md:text-4xl! font-bold! tracking-tight text-slate-900">
+                    {p1}{' '}
+                    <span className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
+                      {p2}{' '}
+                    </span>
+                    {p3}
+                  </h2>
+                );
+              })()}
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
@@ -504,8 +519,8 @@ export function HomePage() {
 
                     <p className="text-lg flex-1 mb-0!">
                       <strong>{i18n.get('Shivantra')}</strong>{' '}
-                      {i18n.get('is an official partner of')} <strong>{i18n.get('Axelor')}</strong>
-                      {i18n.get(', delivering production-grade ERP systems at scale.')}
+                      {i18n.get('is an official partner of')} <strong>{i18n.get('Axelor, ')}</strong>
+                      {i18n.get('delivering production-grade ERP systems at scale.')}
                     </p>
                   </div>
                 </Link>
@@ -534,17 +549,23 @@ export function HomePage() {
           <div className="relative mx-auto w-[90%] max-w-[1200px] py-14 lg:py-20">
             {/* Header */}
             <div className="mx-auto max-w-3xl text-center">
-              <h1 className="text-3xl! md:text-4xl! font-bold! tracking-tight text-slate-900 mb-0!">
-                {i18n.get('Axelor Services by')}{' '}
-                <Link
-                  to="https://shivantra.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-gradient-to-r! from-indigo-500! via-purple-500! to-pink-500! bg-clip-text! text-transparent!"
-                >
-                  {i18n.get('Shivantra')}
-                </Link>
-              </h1>
+              {(() => {
+                const [before, after = ''] = i18n.get('axelor_services_title').split('|');
+                return (
+                  <h1 className="text-3xl! md:text-4xl! font-bold! tracking-tight text-slate-900 mb-0!">
+                    {before}{' '}
+                    <Link
+                      to="https://shivantra.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-gradient-to-r! from-indigo-500! via-purple-500! to-pink-500! bg-clip-text! text-transparent!"
+                    >
+                      Shivantra
+                    </Link>
+                    {after ? <>{' '}{after}</> : null}
+                  </h1>
+                );
+              })()}
 
               <p className="mt-6! mb-10! text-lg text-slate-600">
                 {i18n.get(
@@ -604,13 +625,18 @@ export function HomePage() {
 
           {/* Content */}
           <div className="relative z-10 w-[90%] max-w-[1200px] mx-auto text-center space-y-6">
-            <h2 className="text-3xl! md:text-5xl! font-extrabold text-white! mb-7!">
-              {i18n.get('Build better')}{' '}
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400">
-                {i18n.get('Axelor ERP')}
-              </span>{' '}
-              {i18n.get('experiences')}
-            </h2>
+            {(() => {
+              const [p1, p2, p3] = i18n.get('build_better_title').split('|');
+              return (
+                <h2 className="text-3xl! md:text-5xl! font-extrabold text-white! mb-7!">
+                  {p1}{' '}
+                  <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400">
+                    {p2}
+                  </span>{' '}
+                  {p3}
+                </h2>
+              );
+            })()}
 
             <p className="text-lg! text-white/90! max-w-2xl mx-auto">
               {i18n.get(
