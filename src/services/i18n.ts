@@ -1,19 +1,36 @@
 import EN from '../resources/en.json';
 import FR from '../resources/fr.json';
+import ES from '../resources/es.json';
+import DE from '../resources/de.json';
+import JA from '../resources/ja.json';
+import ZH from '../resources/zh.json';
+import HI from '../resources/hi.json';
+import TH from '../resources/th.json';
 
-export type Lang = 'en' | 'fr';
+type Messages = Record<string, string>;
+
+export type Lang = 'en' | 'fr' | 'es' | 'de' | 'ja' | 'zh' | 'hi' | 'th';
 
 const getCurrentLang = () => (localStorage.getItem('app.lang') || 'en') as Lang;
 
 const saveCurrentLang = (lang: string) => localStorage.setItem('app.lang', lang);
 
-const bundles = { en: EN, fr: FR };
+const bundles: Record<Lang, Messages> = {
+  en: EN as Messages,
+  fr: FR as Messages,
+  es: ES as Messages,
+  de: DE as Messages,
+  ja: JA as Messages,
+  zh: ZH as Messages,
+  hi: HI as Messages,
+  th: TH as Messages,
+};
 
-let bundle: Record<string, string> | null = null;
+let bundle: Messages | null = null;
 
 const load = () => {
   if (!bundle) {
-    bundle = bundles[getCurrentLang()] ?? {};
+    bundle = bundles[getCurrentLang()] || bundles.en;
   }
 };
 

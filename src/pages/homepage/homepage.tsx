@@ -32,12 +32,12 @@ export function HomePage() {
             {/* Header */}
             <div className="text-center mb-10! lg:mb-20!">
               <h1 className="text-center font-bold! tracking-tight text-slate-900">
-                <span className="block text-3xl md:text-4xl lg:text-5xl text-slate-900 max-w-4xl mx-auto">
+                <span className="block leading-10 md:leading-11 lg:leading-14 text-3xl md:text-4xl lg:text-5xl text-slate-900 max-w-4xl mx-auto">
                   {i18n.get('Create, preview, and deliver customized')}
                 </span>
 
                 <span
-                  className="block mt-3 lg:mt-4 text-3xl md:text-4xl lg:text-5xl
+                  className="block mt-2 lg:mt-3 leading-10 md:leading-11 lg:leading-18 text-3xl md:text-4xl lg:text-5xl
                    bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600
                    bg-clip-text text-transparent"
                 >
@@ -504,8 +504,8 @@ export function HomePage() {
 
                     <p className="text-lg flex-1 mb-0!">
                       <strong>{i18n.get('Shivantra')}</strong>{' '}
-                      {i18n.get('is an official partner of')} <strong>{i18n.get('Axelor')}</strong>
-                      {i18n.get(', delivering production-grade ERP systems at scale.')}
+                      {i18n.get('is an official partner of')} <strong>{i18n.get('Axelor, ')}</strong>
+                      {i18n.get('delivering production-grade ERP systems at scale.')}
                     </p>
                   </div>
                 </Link>

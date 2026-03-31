@@ -20,8 +20,38 @@ const createLanguageMenu = (i18n: any) => ({
     },
     {
       key: 'fr',
-      text: 'French',
+      text: 'Français',
       onClick: () => i18n.change('fr'),
+    },
+    {
+      key: 'es',
+      text: 'Español',
+      onClick: () => i18n.change('es'),
+    },
+    {
+      key: 'de',
+      text: 'Deutsch',
+      onClick: () => i18n.change('de'),
+    },
+    {
+      key: 'ja',
+      text: '日本語',
+      onClick: () => i18n.change('ja'),
+    },
+    {
+      key: 'zh',
+      text: '中文',
+      onClick: () => i18n.change('zh'),
+    },
+    {
+      key: 'hi',
+      text: 'हिन्दी',
+      onClick: () => i18n.change('hi'),
+    },
+    {
+      key: 'th',
+      text: 'ไทย',
+      onClick: () => i18n.change('th'),
     },
   ],
 });
